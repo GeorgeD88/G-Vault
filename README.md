@@ -1,5 +1,5 @@
 # G-Vault
-**G-Vault** is a simple and safe offline password manager with a command-line interface that saves sensitive information as *"data objects"* to JSON files.
+**G-Vault** is a simple and safe offline password manager with a command-line interface that saves sensitive information as _"data objects"_ to JSON files.
 These data objects can contain: passwords, account info, payment methods (like credit cards, debit cards, etc.), email accounts, and more.
 
 ## Types of Data Objects
