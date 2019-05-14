@@ -4,19 +4,9 @@ import tools
 import json
 
 
-class DataObj:
-
-    def __init__(self, category: str):
-        self.category = category
-        self.fields = {}
-
-
-# TODO: Child class for each category.
-
-
 # TODO: Add **kwargs to build().
-def build(category: str, *args) -> dict:  # Returns a dictionary of a data object with passed args in their corresponding fields.
-    if type(category).__name__ != 'str':  # Confirms that argument is passed is of type string.
+def build(category: str, **kargs) -> dict:  # Returns a dictionary of a data object with kwargs passed for it's data fields.
+    if type(category).__name__ != 'str':  # Confirms that the argument is passed is of type string.
         raise TypeError(f'Value from argument category is type {type(category).__name__}, expected str')
     with open('template.json', 'r') as in_file:  # Opens data.json for reading.
         example = json.load(in_file)  # Extracts json data from template.json.
@@ -39,9 +29,8 @@ def build(category: str, *args) -> dict:  # Returns a dictionary of a data objec
     return data_object  # Returns the newly built data_object.
 
 
-def save(category: str) -> None:
-    pass  # TODO: Complete
-
-
 def edit_data_object(category: str):
     pass  # TODO: Complete
+
+
+def save

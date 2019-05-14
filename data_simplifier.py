@@ -1,5 +1,4 @@
 from uszipcode import SearchEngine
-import difflib
 import json
 
 
