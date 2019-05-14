@@ -1,0 +1,53 @@
+{
+  "accounts": [
+    {
+      "service": "Mojang",
+      "url": "http://mojang.com",
+      "username": "Noobmaster69",
+      "password": "admin1",
+      "email": "noobmaster@gmail.com",
+      "phone": 1.9876543210,
+      "security_questions": {
+        "All time favorite video game?": "Fortnite"
+      }
+    }
+  ],
+  "addresses": [
+    {
+      "fname": "Korg",
+      "lname": "Kronan",
+      "line1": "420 God of Thunder Rd",
+      "line2": null,
+      "zipcode": 42069,
+      "country": "United States",
+      "state": "New York",
+      "city": "New Asgard"
+    }
+  ],
+  "documents": [
+    {
+    "title": "To-Do List",
+    "description": null,
+    "content": "- Retard\n- Lol\n- Be a fucking idiot"
+    }
+  ],
+  "emails": [
+    {
+      "fname": "Korg",
+      "lname": "Kronan",
+      "email": "noobmaster@gmail.com",
+      "password": "admin1",
+      "phone": 1.9876543210
+    }
+  ],
+  "payment_methods": [
+    {
+      "type": "Credit Card",
+      "fullname": "Korg Kronan",
+      "card_number": 3210123456789,
+      "expiration": 4.20,
+      "cvv": 6969,
+      "zipcode": 33884
+    }
+  ]
+}
