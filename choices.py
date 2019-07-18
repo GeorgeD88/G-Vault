@@ -35,6 +35,22 @@ def view():
     input('Press ENTER to go to menu')
 
 
+# View Option
+def list_view():
+    # Title
+    print()
+    print(' List '.center(width, '-'))
+    print()
+    sleep(0.5)
+
+    # Viewing All Names
+    for name in file.name_list():
+        print(name)
+        sleep(0.3)
+    print()
+    input('Press ENTER to go to menu')
+
+
 # New Option
 def new():
     # Title

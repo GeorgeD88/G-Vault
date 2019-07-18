@@ -16,10 +16,10 @@ while True:
     sleep(0.5)
 
     # Choice Selection
-    options = ['VIEW', 'NEW', 'EDIT', 'DELETE', 'EXPORT']
+    options = ['VIEW', 'LIST', 'NEW', 'EDIT', 'DELETE', 'EXPORT']
     if file.password_amount() == 0:  # If there are no existing passwords.
-        for i in range(1, len(options)-1):
-            print(f'[{i}] {options[i]}')
+        for i in range(2, len(options)-1):
+            print(f'[{i-1}] {options[i]}')
             sleep(0.25)
         print()
         print(' [QUIT]')
@@ -94,15 +94,17 @@ while True:
                     choices.view()
                     break
                 elif choice == 2:
+                    choices.list_view()
+                elif choice == 3:
                     choices.new()
                     break
-                elif choice == 3:
+                elif choice == 4:
                     choices.edit()
                     break
-                elif choice == 4:
+                elif choice == 5:
                     choices.delete()
                     break
-                elif choice == 5:
+                elif choice == 6:
                     choices.export()
                     break
                 elif choice.lower() == 'quit':
