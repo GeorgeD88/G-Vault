@@ -1,4 +1,5 @@
-import time
+import handler
+from time import time, sleep
 
 
 def line(width: int, line_char: str = '-'):
@@ -8,10 +9,31 @@ def line(width: int, line_char: str = '-'):
     return line_str
 
 
-print('Welcome to G-Vault!'.center(150))
-time.sleep(0.5)
+# Application Title
 print()
-time.sleep(0.5)
-print('The one stop shop password manager to store your account information, credit cards, passwords, and more!'.center(150))
-time.sleep(1)
-print('\n', line(150, '#'))
+print('G-Vault'.center(100))
+sleep(0.2)
+print(line(9, '#').center(100))
+sleep(0.1)
+
+# Setup Decision
+if handler.check_config('new_user'):  # If the user is a new user.
+    print('Let\'s set up G-Vault')
+    sleep(0.25)
+    print('First, some basic personal info')
+    sleep(0.2)
+    fname = input('First Name: ')
+    lname = input('Last Name: ')
+    print('Now we\'re gonna need some security info')
+    sleep(0.2)
+    password = input('Master Password: ')
+    email = input('Email (for recover and authentication): ')
+    print('saving new information:')
+    sleep(0.15)
+    with open('config.json', 'w+') as out_file:
+        jso
+
+# Security/Login
+accessGranted = False
+while not accessGranted:
+    input()

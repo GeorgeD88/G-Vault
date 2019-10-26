@@ -3,7 +3,7 @@
     {
       "service": "Mojang",
       "url": "http://mojang.com",
-      "username": "Noobmaster69",
+      "username": "Noobmaster",
       "password": "admin1",
       "email": "noobmaster@gmail.com",
       "phone": 1.9876543210,
@@ -16,9 +16,9 @@
     {
       "fname": "Korg",
       "lname": "Kronan",
-      "line1": "420 God of Thunder Rd",
+      "line1": "789 God of Thunder Rd",
       "line2": null,
-      "zipcode": 42069,
+      "zipcode": 12345,
       "country": "United States",
       "state": "New York",
       "city": "New Asgard"
@@ -28,7 +28,7 @@
     {
     "title": "To-Do List",
     "description": null,
-    "content": "- Retard\n- Lol\n- Be a fucking idiot"
+    "content": "- Take out the trash\n- Play Fortnite with Thor"
     }
   ],
   "emails": [

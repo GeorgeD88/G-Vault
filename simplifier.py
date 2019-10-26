@@ -53,6 +53,28 @@ def plural2singular(plural: str) -> str:  # Returns singular of plural word (is 
     return plural[:-2] if plural[-3:] == 'ses' else plural[:-1]
 
 
+def data_checker(value, confirm_type: str or object):
+    if type(value).__name__ != str(confirm_type):  # Confirms that the argument is passed is of type, confirm_type.
+        raise TypeError(f'Value from argument category is type {type(value).__name__}, expected {confirm_type}')
+
+
+def is_container(value, return_type: bool = False) -> type or None:
+    for container in [dict, list, tuple]:  # For every type of container.
+        if data_checker(value, container):  # If the data type of the value is equal to the current iteration of the containers.
+            return True if not return_type else type(value)  # Return True if they don't want the data type itself to be returned.
+    return False  # If none of the containers match, continue through the function and return False.
+
+
+def index_dict(dictionary: dict, element, is_key: bool) -> int:  # Returns index of a key or value in dictionary because there is no default dict method for it.
+    if is_key is True:
+        elems: list = list(dictionary.keys())
+    elif is_key is False:
+        elems: list = list(dictionary.values())
+    else:
+        raise TypeError(f'Value from argument is_key is type {type(is_key).__name__}, expected bool')
+    return elems.index(element)
+
+
 def dict_aliases() -> dict:  # Returns a dictionary of the aliases of categories in data.json.
     with open('data.json', 'r') as in_file:
         data = json.load(in_file)
@@ -82,3 +104,8 @@ def list_aliases() -> list:  # Returns a list of the aliases of the categories i
         for alias in a_list:
             aliases.append(alias)
     return aliases
+
+
+def simplify(string: str, return_lowercase: bool = True) -> str:  # Removes white space on edges and changes case.
+    stripped = string.rstrip().lstrip().replace(' ', '')  # Removes all white space.
+    return stripped.lower() if return_lowercase else (stripped.upper() if not return_lowercase else stripped)
