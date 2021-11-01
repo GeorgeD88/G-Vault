@@ -1,6 +1,7 @@
 # G-Vault
-**G-Vault** is a simple and safe offline password manager with a command-line interface that saves sensitive information as _"data objects"_ to JSON files.
+**G-Vault** is a basic offline password manager with a command-line interface that saves sensitive information as _"data objects"_ to JSON files.
 These data objects can contain: passwords, account info, payment methods (like credit cards, debit cards, etc.), email accounts, and more.
+This is an early coding project and saves information unencrypted.
 
 ## Types of Data Objects
 The data objects that **G-Vault** works with are linked to a corresponding category. The different data types that you can save using **G-Vault** contain different information fields.   
@@ -10,7 +11,7 @@ Unfilled fields that don't have enough information to be auto-filled are saved a
 ##### Emphasis Key
 **List titles are bolded to improve readability**:
 * Unemphasized fields are just regular fields that don't have any requirements.
-* _Italicized fields mean that at least one of the italicized fields in the list is required to be provided._
+* _Italicized fields mean that at least one of the italicized fields is required to be provided._
 * **_Bolded and Italicized fields mean that it is absolutely necessary for this field to be provided._**
 
 ### Accounts
