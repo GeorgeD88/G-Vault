@@ -8,7 +8,7 @@ The data objects that **G-Vault** works with are linked to a corresponding categ
 *When possible, some fields might be auto-filled based on the other fields provided with the data object.   
 Unfilled fields that don't have enough information to be auto-filled are saved as null.*
 
-##### Emphasis Key
+#### Emphasis Key
 **List titles are bolded to improve readability**:
 * Unemphasized fields are just regular fields that don't have any requirements.
 * _Italicized fields mean that at least one of the italicized fields is required to be provided._
